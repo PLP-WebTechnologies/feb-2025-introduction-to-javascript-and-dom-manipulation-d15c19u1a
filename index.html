@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout with Flexbox & Grid</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">MySite</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>This area uses <strong>Grid</strong> layout and adjusts based on screen size.</p>
+      
+      <!-- Buttons -->
+      <button onclick="shakeCard()">Shake First Card</button>
+      <button onclick="changeSecondCardColor()">Change Second Card Colors</button>
+      <button id="toggleButton" onclick="toggleThirdCard()">Hide Third Card</button>
+    </aside>
+
+    <section class="content">
+      <div class="card" id="card-to-shake">
+        <h1>Welcome! 👋</h1>
+        <p>This layout uses both <strong>Flexbox</strong> and <strong>CSS Grid</strong>. It's responsive and adapts to mobile, tablet, and desktop views.</p>
+      </div>
+      <div class="card" id="card-to-color">
+        <h2>What I’m Learning 🎓</h2>
+        <p>Box model, display property, positioning, Flexbox, Grid, media queries, and responsive design principles.</p>
+      </div>
+      <div class="card" id="card-to-toggle">
+        <h2>Responsive Design 📱🖥️</h2>
+        <p>Using <code>@media</code> queries to change layouts and font sizes for better UX across devices.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MySite. Built with HTML, CSSS and JS!</p>
+  </footer>  
+
+</body>
+</html>
